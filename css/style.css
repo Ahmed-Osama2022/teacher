@@ -1,0 +1,7 @@
+body {
+  background-color: #f3f3f3;
+  direction: rtl;
+}
+.form-select {
+  width: 20vw !important;
+}

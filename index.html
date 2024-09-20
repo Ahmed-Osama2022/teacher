@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>انشاء المعلم</title>
+</head>
+
+<body>
+
+    <div class="text-center p-3 mt-3">
+        <h2 class="lead fs-2">إنشاء حساب معلم</h2>
+    </div>
+
+    <div class="row  justify-content-center align-content-center mx-auto ">
+        <!-- PLUS button -->
+        <div class="rounded-pill me-5 p-3" id="addBtn">
+            <i class="bi bi-plus  btn btn-primary"></i>
+        </div>
+
+        <form class="col-6 justify-content-center align-content-center g-3 flex-column" id="teacher-form">
+            <!-- =================== NOTE: Add using Javascript =================== -->
+            <!-- REPEAT using js -->
+            <div class="row flex-row justify-content-center align-content-center  gap-3">
+                <select id="system" name="system-1" class="form-select col-5" aria-label="Default select example">
+                    <optgroup label="اختار نظام التعليم">
+                        <option value="arabic">عربي</option>
+                        <option value="interntional">لغات</option>
+                        <option value="Azhary">أزهري</option>
+                    </optgroup>
+                </select>
+
+                <select id="material" name="material-1" class="form-select col-5" aria-label="Default select example">
+                    <optgroup label="اختار الماده">
+                        <option value="arabic-lang" selected>لغه عربيه</option>
+                        <option value="math">رياضيات</option>
+                        <option value="science">علوم</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="row flex-row justify-content-center align-content-center mt-3 gap-3">
+                <select id="grade" name="grade-1" class="form-select col-5" aria-label="Default select example">
+                    <optgroup label="اختار الصف الدراسي">
+                        <option value="first-high-school" selected>اولى ثانوي</option>
+                        <option value="second-high-school">ثانيه ثانوي</option>
+                        <option value="third-high-school">ثالثه ثانوي</option>
+                    </optgroup>
+                </select>
+
+                <select id="nationality" name="national_ids-1" class="form-select col-5"
+                    aria-label="Default select example">
+                    <optgroup label="اختار الجنسية">
+                        <option value="egyptian" selected>مصري</option>
+                        <option value="saudi">سعودي</option>
+                    </optgroup>
+                </select>
+
+                <hr class="mt-2">
+                <div id="repeat"></div>
+            </div>
+            <!-- =================== End repeat!! =================== -->
+
+            <div class=" text-center mx-auto">
+                <button type="submit" name="submit" id="submit"
+                    class="btn btn-primary border rounded-3 my-3">إضافه</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <!-- JS -->
+    <!-- =================== Bootstrap Js =================== -->
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./js/bootstrap.bundle.min.js.map"></script> -->
+    <!-- ==================== Own Js ==================== -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
