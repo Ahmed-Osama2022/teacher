@@ -62,7 +62,7 @@ addBtn.addEventListener('click', () => {
                     </optgroup>
                 </select>
                 `;
-
+  // End Html Templates
   teacherFormDiv.appendChild(menu1);
   teacherFormDiv.appendChild(menu2);
   teacherFormDiv.appendChild(separator);
